@@ -1,0 +1,32 @@
+<html>
+  <head>
+     <title> Login page </title> 
+  </head>
+  <body>
+    <h1>Login</h1>
+    <label>username</label>
+    <input type="text" id="username">
+    <br>
+    <label>password</label>
+    <input type="password" id="password">
+    <br>
+    <button id="LoginButton">Login</button>
+    <p id="message"></p>
+    <script>
+    let username=document.getElementById("username")
+    let password=document.getElementById("password")
+    let LoginButton=document.getElementById("LoginButton")
+    let message=document.getElementById("message")
+    LoginButton.addEventListener("click",function(){
+      let user = username.value;
+      let pass = password.value;
+      if(user=="sahini" && pass=="1111"){
+            message.innerHTML="login successful";
+      }
+      else{
+            message.innerHTML ="login unsuccessful";
+      }
+    });
+   </script>
+  </body>
+</html>
