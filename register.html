@@ -1,0 +1,59 @@
+<html>
+  <head>
+     <title> Registeration form </title> 
+  </head>
+  <body>
+    <h1 class="from-header">Registeration form</h1>
+    <tabel>
+      <form>
+        <!--fullname-->
+        <tr>
+          <th><label for="full name">full name:</label></th>
+          <td>
+             <input type="text" id="full name" name="full name" required>
+          </td>
+        </tr>
+        <!--password-->
+        <tr>
+          <th><label for="password">password:</label></th>
+          <td>
+            <input type="password" id="password" name="password">
+          </td>
+        </tr>
+        <!--phone number-->
+        <tr>
+          <th><label for="phone">phone number:</label></th>
+          <td>
+            <input type="number" id="phone number" name="phone" required>
+          </td>
+        </tr>
+        <!--Date of birth-->
+        <tr>
+          <th><label for="date of birth"> date of birth:</label></th>
+          <td>
+            <input type="date" id="dob" name="dob">
+          </td>
+        </tr>
+        <!--gender(radio buttons)-->
+        <tr>
+          <th>gender:</th>
+          <td>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">male:</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">female:</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">other:</label>
+          </td>   
+        </tr>
+        <!--submit and reset button-->
+        <tr>
+          <td colspan="2" class="form froter">
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+          </td>
+        </tr>
+      </form>
+    </tabel>
+  </body>
+</html>
